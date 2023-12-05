@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRTA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body>
+    <header class="bg-blue-950 text-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                <div class="text-xl font-bold">
+                    BRTA
+                </div>
+                <!-- Navigation bar items -->
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="/index.html" class="text-base font-medium hover:text-blue-500">Home</a>
+                    <a href="/form.html" class="text-base font-medium hover:text-blue-500">Form</a>
+                    <a href="/transportlaw.html" class="text-base font-medium hover:text-blue-500">Transport Law</a>
+                    <a href="/about.html" class="text-base font-medium hover:text-blue-500">About us</a>
+                    <a href="/login.html" class="text-base font-medium hover:text-blue-500">Login</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container mx-auto mt-8 p-4 mb-36">
+        <h2 class="text-center py-10 text-5xl font-semibold">Welcome to Bangladesh Road Transport Authority</h2>
+        <div class="carousel-container relative">
+            <div class="carousel flex">
+                <!-- Slide 1 -->
+                <div class="carousel-item p-4 bg-blue-100 mr-4 rounded-lg shadow-lg">
+                    <img src="/licence.webp" alt="Slide 1" class="w-full h-64 object-cover mb-4">
+                    <h2 class="text-xl font-bold mb-2">Get BRTA Smart Card</h2>
+                    <p class="text-gray-700">Fee: $100</p>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="carousel-item p-4 bg-blue-100 mr-4 rounded-lg shadow-lg">
+                    <img src="/CANCELLED-1.jpg" alt="Slide 2" class="w-full h-64 object-cover mb-4">
+                    <h2 class="text-xl font-bold mb-2">Cancel License</h2>
+                    <p class="text-gray-700">Fee: $150</p>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="carousel-item p-4 bg-blue-100 mr-4 rounded-lg shadow-lg">
+                    <img src="/license10.jpeg" alt="Slide 3" class="w-full h-64 object-cover mb-4">
+                    <h2 class="text-xl font-bold mb-2">Driving License</h2>
+                    <p class="text-gray-700">Fee: $120</p>
+                </div>
+    
+                <!-- Slide 4 -->
+                <div class="carousel-item p-4 bg-blue-100 mr-4 rounded-lg shadow-lg">
+                    <img src="/vectorlicense.jpg" alt="Slide 4" class="w-full h-64 object-cover mb-4">
+                    <h2 class="text-xl font-bold mb-2">Illustrator Of Driving License</h2>
+                    <p class="text-gray-700">Fee: $130</p>
+                </div>
+    
+                <!-- Slide 5 -->
+                <div class="carousel-item p-4 bg-blue-100 mr-4 rounded-lg shadow-lg">
+                    <img src="/Driving-Licence-address-change-process.webp" alt="Slide 5" class="w-full h-64 object-cover mb-4">
+                    <h2 class="text-xl font-bold mb-2">Driving Licence address change process</h2>
+                    <p class="text-gray-700">Fee: $110</p>
+                </div>
+    
+                <!-- Slide 6 -->
+                <div class="carousel-item p-4 bg-blue-100 mr-4 rounded-lg shadow-lg">
+                    <img src="/Process-of-receiving-a-driving-license-in-bangladesh.jpg" alt="Slide 6" class="w-full h-64 object-cover mb-4">
+                    <h2 class="text-xl font-bold mb-2">Process of receiving a driving license</h2>
+                    <p class="text-gray-700">Fee: $140</p>
+                </div>
+            </div>
+    
+            <!-- Navigation Buttons -->
+            <button onclick="prevSlide()"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-4 py-2">Prev</button>
+            <button onclick="nextSlide()"
+                class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-4 py-2">Next</button>
+        </div>
+    </div>
+    
+    
+    <h2 class="text-center text-5xl font-semibold">Vehicle And Fees</h2>
+    <div class="container mx-auto mb-20 mt-8 grid grid-cols-3 gap-4">
+        <!-- First Row -->
+        <div class="col-span-1 p-4 bg-white rounded shadow-md animation-fade-in">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Truck</h2>
+                    <p class="text-gray-700">Price: $100</p>
+                </div>
+                <img src="/truck.png" alt="Image 1" class="w-16 h-16 object-cover">
+            </div>
+        </div>
+    
+        <div class="col-span-1 p-4 bg-white rounded shadow-md animation-fade-in">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Rickshaw</h2>
+                    <p class="text-gray-700">Price: $150</p>
+                </div>
+                <img src="/rickshaw.png" alt="Image 2" class="w-16 h-16 object-cover">
+            </div>
+        </div>
+    
+        <div class="col-span-1 p-4 bg-white rounded shadow-md animation-fade-in">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">CNG Auto</h2>
+                    <p class="text-gray-700">Price: $120</p>
+                </div>
+                <img src="/cng.png" alt="Image 3" class="w-16 h-16 object-cover">
+            </div>
+        </div>
+    
+        <!-- Second Row -->
+        <div class="col-span-1 p-4 bg-white rounded shadow-md animation-fade-in">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Sedan Car</h2>
+                    <p class="text-gray-700">Price: $130</p>
+                </div>
+                <img src="/car.png" alt="Image 4" class="w-16 h-16 object-cover">
+            </div>
+        </div>
+    
+        <div class="col-span-1 p-4 bg-white rounded shadow-md animation-fade-in">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Large Bus</h2>
+                    <p class="text-gray-700">Price: $110</p>
+                </div>
+                <img src="/bus.jpg" alt="Image 5" class="w-16 h-16 object-cover">
+            </div>
+        </div>
+    
+        <div class="col-span-1 p-4 bg-white rounded shadow-md animation-fade-in">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Motobike</h2>
+                    <p class="text-gray-700">Price: $140</p>
+                </div>
+                <img src="/bike.png" alt="Image 6" class="w-16 h-16 object-cover">
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center text-5xl font-semibold">News & Views</h2>
+    <div class="container mx-auto mt-8 news-container">
+        <!-- News 1 -->
+        <div class="news-item bg-blue-500 text-white">
+            <h2 class="text-xl font-bold mb-2">Breaking News 1</h2>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus in velit
+                hendrerit iaculis.</p>
+        </div>
+    
+        <!-- News 2 -->
+        <div class="news-item bg-green-500 text-white">
+            <h2 class="text-xl font-bold mb-2">News Update 2</h2>
+            <p class="text-gray-200">Sed aliquam nisl ut libero luctus, a dapibus nisl rhoncus. Integer nec fermentum
+                ligula,
+                eu euismod nisl.</p>
+        </div>
+    
+        <!-- News 3 -->
+        <div class="news-item bg-yellow-500 text-gray-800">
+            <h2 class="text-xl font-bold mb-2">Latest Headlines 3</h2>
+            <p class="text-gray-700">Duis laoreet, mi nec tincidunt feugiat, purus sem sagittis sem, vel vestibulum ex
+                ligula
+                vitae orci.</p>
+        </div>
+    </div>
+    <div class=" bg-blue-950 mt-8 text-white py-8">
+        <footer class="mx-auto container flex flex-wrap">
+            <!-- Contact Column -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                <h2 class="text-lg font-semibold mb-2">Contact</h2>
+                <p class="">123 Street, City<br>
+                    Country<br>
+                    Phone: (555) 123-4567<br>
+                    Email: info@example.com</p>
+            </div>
+    
+            <!-- Important Links Column -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                <h2 class="text-lg font-semibold mb-2">Important Links</h2>
+                <ul class="list-none">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+    
+            <!-- Subscribe Column -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                <h2 class="text-lg font-semibold mb-2">Subscribe</h2>
+                <form id="subscribeForm" class="flex items-center">
+                    <input type="email" id="email" name="email" placeholder="Your Email"
+                        class="flex-1 rounded-l py-2 px-4 border-t border-b border-l text-gray-700 focus:outline-none focus:border-blue-500">
+                    <button type="button" onclick="subscribe()"
+                        class="bg-blue-500 text-white py-2 px-4 rounded-r focus:outline-none hover:bg-blue-600">Subscribe</button>
+                </form>
+                <div id="subscribeMessage" class="mt-2 text-red-600"></div>
+            </div>
+        </footer>
+    </div>
+    <script src="/slider.js"></script>
+</body>
+
+</html>
